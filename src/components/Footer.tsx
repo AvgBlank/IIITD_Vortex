@@ -14,7 +14,7 @@ export default function Footer() {
                     <a href="#" className="hover:text-white">Talk to Support</a>
                 </div>
 
-                <h2 className="text-white text-lg font-bold">naam</h2>
+                <h2 className="text-white text-lg font-bold">FlexiLoan</h2>
                 <p className="text-gray-500 text-sm mb-6">We Optimize your process</p>
 
                 <div className="flex justify-center space-x-4 text-xl">
@@ -22,10 +22,6 @@ export default function Footer() {
                     <a href="#" className="hover:text-pink-500"><FaInstagram /></a>
                     <a href="#" className="hover:text-blue-400"><FaTwitter /></a>
                     <a href="#" className="hover:text-red-500"><FaYoutube /></a>
-                </div>
-
-                <div className="border-t border-gray-700 mt-6 pt-6 text-xs">
-                    <p>Copyright &copy; 2022 | naam. All rights reserved.</p>
                 </div>
             </div>
         </footer>
