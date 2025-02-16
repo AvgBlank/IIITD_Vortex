@@ -31,67 +31,67 @@ const MarqueeAnimation = () => {
     <div className="relative w-full h-32 overflow-hidden bg-black text-white">
       <div className="absolute top-5 flex whitespace-nowrap" style={marqueeStyle}>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+        Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+        Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp; Fair & Affordable Loans  &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
-        </p>
-
-        <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
-        </p>
-        <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
-        </p>
-        <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
 
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
-        </p>
-        <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
-        </p>
-        <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
-        </p>
-        <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
 
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
         <p className="text-4xl font-bold uppercase px-4">
-          PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp; PAISA &nbsp;
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
+        </p>
+        <p className="text-4xl font-bold uppercase px-4">
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
+        </p>
+        <p className="text-4xl font-bold uppercase px-4">
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
+        </p>
+        <p className="text-4xl font-bold uppercase px-4">
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
+        </p>
+
+        <p className="text-4xl font-bold uppercase px-4">
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
+        </p>
+        <p className="text-4xl font-bold uppercase px-4">
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
+        </p>
+        <p className="text-4xl font-bold uppercase px-4">
+          Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp; Fair & Affordable Loans &nbsp;
         </p>
 
 
@@ -104,13 +104,13 @@ const MarqueeAnimation = () => {
 
 const marqueeStyle = {
   display: "flex",
-  animation: "marquee 40s linear infinite",
+  animation: "marquee 80s linear infinite",
   width: "max-content",
 };
 
 const marqueeReverseStyle = {
   display: "flex",
-  animation: "marqueeReverse 5s linear infinite",
+  animation: "marqueeReverse 10s linear infinite",
   width: "max-content",
 };
 
