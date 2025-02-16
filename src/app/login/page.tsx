@@ -1,6 +1,7 @@
 "use client";
-
 import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Login = () => {
   const [role, setRole] = useState("lender");
@@ -9,11 +10,14 @@ const Login = () => {
     <div
       className="flex items-center justify-center h-screen bg-cover bg-center"
       style={{
-        backgroundImage: "url('https://media.istockphoto.com/id/1430537932/photo/blue-sky-with-white-clouds.webp?b=1&s=612x612&w=0&k=20&c=gZFaGFFkJ4q568dUxR6XsgJuL87H9ckY4qh0YlDThPM=')",
+        backgroundImage:
+          "url('/background.webp')",
       }}
     >
       <div className="bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl shadow-lg max-w-sm w-full text-center">
-        <h2 className="text-white text-2xl font-semibold mb-4">Login as {role}</h2>
+        <h2 className="text-white text-2xl font-semibold mb-4">
+          Login as {role}
+        </h2>
         <div className="flex justify-center mb-4">
           <button
             className={`px-4 py-2 mx-2 rounded-lg text-white transition ${
@@ -45,12 +49,25 @@ const Login = () => {
         <button className="w-full bg-black text-white p-3 rounded-lg hover:bg-gray-800 transition">
           Get Started
         </button>
-        <p className="text-white text-sm mt-3 cursor-pointer">Forgot password?</p>
+        <p className="text-white text-sm mt-3 cursor-pointer">
+          Forgot password?
+        </p>
+        <p className="text-white text-sm mt-3 cursor-pointer">
+          Already have an account? Sign in{" "}
+          <Link className="text-blue-600" href="/signup">
+            here
+          </Link>
+        </p>
         <div className="flex justify-center mt-4 space-x-4">
           <button className="bg-white p-2 rounded-full">
-            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png" alt="Google" className="h-6" />
+            <Image
+              src="/google_logo.webp"
+              alt="Google"
+              className="h-6"
+              width={24}
+              height={24}
+            />
           </button>
-           
         </div>
       </div>
     </div>
@@ -58,3 +75,4 @@ const Login = () => {
 };
 
 export default Login;
+

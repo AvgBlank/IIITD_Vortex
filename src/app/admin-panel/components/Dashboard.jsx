@@ -12,14 +12,11 @@ export default function Dashboard() {
 
   
   return (
-    <div className="flex h-screen mt-16 bg-gray-100">
+    <div className="flex h-screen mt-16 bg-gray-800">
       <Sidebar />
       <main className="flex-1 p-6 overflow-y-auto">
         <header className="mb-6">
           <h1 className="text-2xl font-bold">Hi, Hussain Khorakiwala 👋</h1>
-          <p className="text-gray-600">
-            Here’s what’s happening with your money. Let’s manage your expenses.
-          </p>
         </header>
 
         <section className="grid grid-cols-3 gap-4">
@@ -30,7 +27,7 @@ export default function Dashboard() {
 
         <section className="mt-6">
           <h2 className="text-lg font-semibold">Activity</h2>
-          <div className="bg-white p-4 rounded-lg shadow">
+          <div className="bg-gray-900 p-4 rounded-lg shadow">
             <BarChart width={600} height={300} data={data}>
               <XAxis dataKey="name" />
               <YAxis />
@@ -48,7 +45,7 @@ export default function Dashboard() {
 
 function Card({ title, amount }) {
   return (
-    <div className="bg-white p-4 rounded-lg shadow">
+    <div className="bg-gray-900 p-4 rounded-lg shadow">
       <h2 className="text-lg font-semibold">{title}</h2>
       <p className="text-xl font-bold">{amount}</p>
     </div>
