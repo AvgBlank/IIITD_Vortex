@@ -17,7 +17,7 @@ const GOOGLE_CLIENT_SECRET = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET!;
 const SESSION_SECRET = process.env.NEXT_PUBLIC_SESSION_SECRET!;
 const SESSION_EXPIRY = "6h";
 
-export default async function GET(req: Request) {
+export async function GET(req: Request) {
   try {
     const tokenName: string = "AdminToken";
 
