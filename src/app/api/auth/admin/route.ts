@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
     const body = await request.json();
     const { email, password } = body;
 
-    const user = await prisma.AdminUser.findUnique({
+    const user = await prisma.adminUser.findUnique({
       where: { email },
     });
 
@@ -78,7 +78,7 @@ export async function POST(request: Request) {
     }
 
     // Check if email doesn't already exist
-    const checkEmail = await prisma.AdminUser.findUnique({ where: { email } });
+    const checkEmail = await prisma.adminUser.findUnique({ where: { email } });
     if (checkEmail) {
       return NextResponse.json(
         { error: "User with this email already exists" },
@@ -93,12 +93,12 @@ export async function POST(request: Request) {
     let randomId = Math.floor(1000000000 + Math.random() * 9000000000);
 
     while (
-      await prisma.AdminUser.findUnique({ where: { id: randomId.toString() } })
+      await prisma.adminUser.findUnique({ where: { id: randomId.toString() } })
     ) {
       randomId = Math.floor(1000000000 + Math.random() * 9000000000);
     }
 
-    const newUser = await prisma.AdminUser.create({
+    const newUser = await prisma.adminUser.create({
       data: {
         id: randomId.toString(),
         name,
