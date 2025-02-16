@@ -1,13 +1,6 @@
-import {
-  PrismaClient,
-  AdminUser,
-  LenderUser,
-  BorrowerUser,
-} from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 import { NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
-
-type UserType = "adminUser" | "lenderUser" | "borrowerUser";
 
 type OAuthResponse = {
   access_token?: string;
@@ -24,12 +17,10 @@ const GOOGLE_CLIENT_SECRET = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET!;
 const SESSION_SECRET = process.env.NEXT_PUBLIC_SESSION_SECRET!;
 const SESSION_EXPIRY = "6h";
 
-async function handleOAuth(
-  req: Request,
-  userType: UserType,
-  tokenName: string,
-) {
+export default async function GET(req: Request) {
   try {
+    const tokenName: string = "AdminToken";
+
     const { searchParams } = new URL(req.url);
     const code = searchParams.get("code");
     if (!code)
@@ -63,55 +54,17 @@ async function handleOAuth(
       },
     ).then((res) => res.json());
 
-    const { email, name } = userResponse;
+    const { email } = userResponse;
     if (!email)
       return NextResponse.json({ error: "No email provided" }, { status: 400 });
 
-    let user: AdminUser | LenderUser | BorrowerUser | null;
+    const user = await prisma.adminUser.findUnique({ where: { email } });
 
-    if (userType === "adminUser") {
-      user = await prisma.adminUser.findUnique({ where: { email } });
-    } else if (userType === "lenderUser") {
-      user = await prisma.lenderUser.findUnique({ where: { email } });
-    } else {
-      user = await prisma.borrowerUser.findUnique({ where: { email } });
-    }
-
-    if (!user && userType === "adminUser") {
+    if (!user) {
       return NextResponse.json(
         { error: "Admin user not found" },
         { status: 404 },
       );
-    } else if (!user) {
-      let randomId: string;
-      do {
-        randomId = Math.floor(
-          1000000000 + Math.random() * 9000000000,
-        ).toString();
-      } while (
-        (await prisma.lenderUser.findUnique({ where: { id: randomId } })) ||
-        (await prisma.borrowerUser.findUnique({ where: { id: randomId } }))
-      );
-
-      if (userType === "lenderUser") {
-        user = await prisma.lenderUser.create({
-          data: {
-            id: randomId,
-            name: name ?? "Unknown User",
-            email,
-            password: null,
-          },
-        });
-      } else {
-        user = await prisma.borrowerUser.create({
-          data: {
-            id: randomId,
-            name: name ?? "Unknown User",
-            email,
-            password: null,
-          },
-        });
-      }
     }
 
     const sessionToken = jwt.sign({ Id: user.id }, SESSION_SECRET, {
@@ -138,16 +91,4 @@ async function handleOAuth(
     console.error("OAuth error:", error);
     return NextResponse.json({ error: "OAuth failed" }, { status: 500 });
   }
-}
-
-export async function ADMIN(req: Request) {
-  return handleOAuth(req, "adminUser", "AdminToken");
-}
-
-export async function LENDER(req: Request) {
-  return handleOAuth(req, "lenderUser", "LenderToken");
-}
-
-export async function BORROWER(req: Request) {
-  return handleOAuth(req, "borrowerUser", "BorrowerToken");
 }
