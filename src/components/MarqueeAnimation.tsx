@@ -108,10 +108,4 @@ const marqueeStyle = {
   width: "max-content",
 };
 
-const marqueeReverseStyle = {
-  display: "flex",
-  animation: "marqueeReverse 10s linear infinite",
-  width: "max-content",
-};
-
 export default MarqueeAnimation;
